@@ -6,7 +6,7 @@ import play.api.mvc._
 object Application extends Controller {
   
   def index = Action {
-    Ok("this is app 1")
+    Ok(App2.message)
   }
   
 }
