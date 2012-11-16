@@ -16,6 +16,6 @@ object App1Build extends Build {
 
   val main = play.Project(appName, appVersion, appDependencies, path=file(".") / "app1").settings(
     // Add your own project settings here      
-  )
+  ).dependsOn(App2Build.main)
 
 }
